@@ -22,15 +22,6 @@ public class AuthHelper {
         }
     }
 
-    public void checkOwnerOrAdmin(HttpServletRequest request, String email) {
-        String role = request.getHeader("X-User-Role");
-        String currentUser = request.getHeader("X-User-Email");
-
-        if (!email.equals(currentUser) && !"ADMIN".equalsIgnoreCase(role)) {
-            throw new RuntimeException("Forbidden: Not allowed");
-        }
-    }
-    
     public void checkOwnerByIdOrAdmin(HttpServletRequest request, String id) {
         String role = request.getHeader("X-User-Role");
         String currentUser = request.getHeader("X-User-Id");

@@ -1,0 +1,779 @@
+2026-05-09 00:05:08 [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-09 00:05:09 [INFO] org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-05-09 00:05:09 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 00:05:09 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-09 00:05:09 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-09 00:05:10 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-09 00:05:10 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.18 with PID 32092 (D:\Eclips\Back end\AuthService\target\classes started by Dell in D:\Eclips\Back end\AuthService)
+2026-05-09 00:05:10 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 00:05:10 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 00:05:10 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2026-05-09 00:05:11 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 00:05:11 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 00:05:11 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 00:05:11 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-09 00:05:11 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 00:05:11 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 871 ms
+2026-05-09 00:05:11 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 00:05:11 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-09 00:05:11 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 00:05:11 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 00:05:11 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 00:05:11 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75e4fe3c
+2026-05-09 00:05:11 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 00:05:12 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 00:05:12 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 00:05:12 [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'authService': Error creating bean with name 'authService': Unsatisfied dependency expressed through field 'authenticationManager': No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-05-09 00:05:12 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 00:05:12 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-09 00:05:12 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-09 00:05:12 [INFO] org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2026-05-09 00:05:12 [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-09 00:05:12 [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field authenticationManager in com.AuthService.demo.service.AuthService required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2026-05-09 00:06:43 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-09 00:06:43 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.18 with PID 33308 (D:\Eclips\Back end\AuthService\target\classes started by Dell in D:\Eclips\Back end\AuthService)
+2026-05-09 00:06:43 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 00:06:43 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 00:06:43 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2026-05-09 00:06:43 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 00:06:43 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 00:06:43 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 00:06:43 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-09 00:06:43 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 00:06:43 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 883 ms
+2026-05-09 00:06:44 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 00:06:44 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-09 00:06:44 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 00:06:44 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 00:06:44 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 00:06:44 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71d99732
+2026-05-09 00:06:44 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 00:06:45 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 00:06:45 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 00:06:45 [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'authService': Error creating bean with name 'authService': Unsatisfied dependency expressed through field 'authenticationManager': No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-05-09 00:06:45 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 00:06:45 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-09 00:06:45 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-09 00:06:45 [INFO] org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2026-05-09 00:06:45 [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-09 00:06:45 [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field authenticationManager in com.AuthService.demo.service.AuthService required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2026-05-09 00:07:55 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-09 00:07:55 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.18 with PID 29784 (D:\Eclips\Back end\AuthService\target\classes started by Dell in D:\Eclips\Back end\AuthService)
+2026-05-09 00:07:55 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 00:07:56 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 00:07:56 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2026-05-09 00:07:56 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 00:07:56 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 00:07:56 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 00:07:56 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-09 00:07:56 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 00:07:56 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 883 ms
+2026-05-09 00:07:56 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 00:07:56 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-09 00:07:56 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 00:07:56 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 00:07:56 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 00:07:57 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b6fcca1
+2026-05-09 00:07:57 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 00:07:57 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 00:07:57 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 00:07:57 [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'authService': Error creating bean with name 'authService': Unsatisfied dependency expressed through field 'authenticationManager': No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-05-09 00:07:57 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 00:07:57 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-09 00:07:57 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-09 00:07:57 [INFO] org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2026-05-09 00:07:57 [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-09 00:07:57 [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field authenticationManager in com.AuthService.demo.service.AuthService required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2026-05-09 00:08:39 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-09 00:08:39 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.18 with PID 31048 (D:\Eclips\Back end\AuthService\target\classes started by Dell in D:\Eclips\Back end\AuthService)
+2026-05-09 00:08:39 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 00:08:40 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 00:08:40 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2026-05-09 00:08:40 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 00:08:40 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 00:08:40 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 00:08:40 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-09 00:08:40 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 00:08:40 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 934 ms
+2026-05-09 00:08:40 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 00:08:40 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-09 00:08:40 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 00:08:41 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 00:08:41 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 00:08:41 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c1e40d9
+2026-05-09 00:08:41 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 00:08:41 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 00:08:41 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 00:08:42 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-09 00:08:42 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5246453e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@299f9a81, org.springframework.security.web.context.SecurityContextHolderFilter@2c3f81ef, org.springframework.security.web.header.HeaderWriterFilter@7305a443, org.springframework.web.filter.CorsFilter@4b19ee18, org.springframework.security.web.authentication.logout.LogoutFilter@769c80d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@712dd0b0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b3284, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2561d61, org.springframework.security.web.session.SessionManagementFilter@403b7be3, org.springframework.security.web.access.ExceptionTranslationFilter@5603632c, org.springframework.security.web.access.intercept.AuthorizationFilter@29897daf]
+2026-05-09 00:08:42 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 00:08:42 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-09 00:08:42 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 3.378 seconds (process running for 3.718)
+2026-05-09 00:10:06 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-09 00:10:06 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-09 00:10:06 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-09 00:10:06 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 00:10:07 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 00:10:51 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/2 from IP: 127.0.0.1
+2026-05-09 00:10:51 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 00:10:58 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/3 from IP: 127.0.0.1
+2026-05-09 00:10:58 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: getUserById | Message: Forbidden: Not allowed
+2026-05-09 00:11:04 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/2 from IP: 127.0.0.1
+2026-05-09 00:11:04 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 00:12:38 [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-09 00:12:38 [INFO] org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-05-09 00:12:38 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 00:12:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-09 00:12:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-09 00:12:41 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-09 00:12:41 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.18 with PID 15584 (D:\Eclips\Back end\AuthService\target\classes started by Dell in D:\Eclips\Back end\AuthService)
+2026-05-09 00:12:41 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 00:12:42 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 00:12:42 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2026-05-09 00:12:42 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 00:12:42 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 00:12:42 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 00:12:42 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-09 00:12:42 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 00:12:42 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 886 ms
+2026-05-09 00:12:42 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 00:12:42 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-09 00:12:42 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 00:12:43 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 00:12:43 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 00:12:43 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f52a229
+2026-05-09 00:12:43 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 00:12:43 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 00:12:43 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 00:12:44 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-09 00:12:44 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43600de0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d028c7e, org.springframework.security.web.context.SecurityContextHolderFilter@15ab0461, org.springframework.security.web.header.HeaderWriterFilter@42a198dd, org.springframework.web.filter.CorsFilter@2e5ff1d4, org.springframework.security.web.authentication.logout.LogoutFilter@380cd266, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@186fc6e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bd5b1c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a16583d, org.springframework.security.web.session.SessionManagementFilter@3c00da24, org.springframework.security.web.access.ExceptionTranslationFilter@73bd146c, org.springframework.security.web.access.intercept.AuthorizationFilter@2dedde74]
+2026-05-09 00:12:44 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 00:12:44 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-09 00:12:44 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 3.304 seconds (process running for 3.657)
+2026-05-09 00:14:53 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-09 00:14:53 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-09 00:14:53 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-05-09 00:14:53 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> PUT /auth/UpdateById/2 from IP: 127.0.0.1
+2026-05-09 00:14:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: updateUser executed successfully
+2026-05-09 00:15:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 00:15:00 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 00:15:04 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 00:15:04 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 00:15:14 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> PUT /auth/UpdateById/4 from IP: 127.0.0.1
+2026-05-09 00:15:14 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: updateUser | Message: Forbidden: Not allowed
+2026-05-09 00:16:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/2 from IP: 127.0.0.1
+2026-05-09 00:16:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 00:18:08 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 00:18:08 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 00:18:13 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 00:18:13 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 00:18:16 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 00:18:16 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 00:21:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 00:21:24 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 00:21:28 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 00:21:28 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 00:29:54 [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-09 00:29:54 [INFO] org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-05-09 00:29:54 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 00:29:54 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-09 00:29:54 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-09 01:12:01 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-09 01:12:01 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.12 with PID 7092 (A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\AuthService\target\classes started by ahmed in A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\AuthService)
+2026-05-09 01:12:01 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 01:12:02 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 01:12:02 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+2026-05-09 01:12:04 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 01:12:04 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 01:12:04 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 01:12:04 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-09 01:12:04 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 01:12:04 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3110 ms
+2026-05-09 01:12:05 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 01:12:05 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-09 01:12:05 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 01:12:05 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 01:12:05 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 01:12:06 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@92e2c93
+2026-05-09 01:12:06 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 01:12:08 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 01:12:08 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 01:12:10 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-09 01:12:11 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40e90634, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78b29e00, org.springframework.security.web.context.SecurityContextHolderFilter@401b7226, org.springframework.security.web.header.HeaderWriterFilter@63e4bbf9, org.springframework.web.filter.CorsFilter@5c438795, org.springframework.security.web.authentication.logout.LogoutFilter@2c6553c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@714a4ba2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ddc817f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b4b2c03, org.springframework.security.web.session.SessionManagementFilter@3b8c15de, org.springframework.security.web.access.ExceptionTranslationFilter@2a49753, org.springframework.security.web.access.intercept.AuthorizationFilter@7acbd3d0]
+2026-05-09 01:12:12 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 01:12:12 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-09 01:12:12 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 11.966 seconds (process running for 12.706)
+2026-05-09 01:13:09 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-09 01:13:09 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-09 01:13:09 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-09 01:13:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 01:13:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 01:18:30 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 01:18:30 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 01:19:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 01:19:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 01:19:59 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 01:19:59 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 01:22:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 01:22:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 01:27:39 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 01:27:39 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 01:29:56 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 01:29:56 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 01:34:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 01:34:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 01:35:01 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 01:35:01 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 10:58:20 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-09 10:58:20 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.12 with PID 23224 (A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\AuthService\target\classes started by ahmed in A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\AuthService)
+2026-05-09 10:58:20 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 10:58:21 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 10:58:21 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2026-05-09 10:58:22 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 10:58:22 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 10:58:22 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 10:58:22 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-09 10:58:23 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 10:58:23 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2738 ms
+2026-05-09 10:58:23 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 10:58:23 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-09 10:58:23 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 10:58:24 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 10:58:24 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 10:58:24 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42401b81
+2026-05-09 10:58:24 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 10:58:26 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 10:58:26 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 10:58:28 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-09 10:58:29 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@b6fea12, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75c095a5, org.springframework.security.web.context.SecurityContextHolderFilter@648bfebe, org.springframework.security.web.header.HeaderWriterFilter@1da5635e, org.springframework.web.filter.CorsFilter@689fe2a3, org.springframework.security.web.authentication.logout.LogoutFilter@52c68925, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4986b0ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ce5a2ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5257123d, org.springframework.security.web.session.SessionManagementFilter@76055d02, org.springframework.security.web.access.ExceptionTranslationFilter@29767156, org.springframework.security.web.access.intercept.AuthorizationFilter@495a9305]
+2026-05-09 10:58:30 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 10:58:30 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-09 10:58:30 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 11.329 seconds (process running for 11.774)
+2026-05-09 11:02:38 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-09 11:02:38 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-09 11:02:38 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-09 11:02:38 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 11:02:39 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 11:18:29 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 11:18:29 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 11:25:14 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 11:25:14 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 11:26:16 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 11:26:16 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 11:27:48 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 11:27:48 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 11:27:51 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 11:27:51 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 11:28:50 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 11:28:50 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 11:31:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 11:31:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 11:32:34 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 11:32:34 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 14:45:57 [WARN] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h56m32s53ms848µs400ns).
+2026-05-09 15:00:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:00:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:09:36 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:09:36 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 15:10:02 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:10:02 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:10:37 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:10:37 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:12:45 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 15:12:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:12:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 15:12:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:13:08 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> PUT /auth/UpdateById/1 from IP: 127.0.0.1
+2026-05-09 15:13:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: updateUser executed successfully
+2026-05-09 15:13:15 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 15:13:15 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:13:15 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 15:13:15 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:13:38 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:13:38 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:14:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:14:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:14:48 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 15:14:48 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:14:48 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 15:14:48 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:15:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> PUT /auth/UpdateById/36 from IP: 127.0.0.1
+2026-05-09 15:15:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: updateUser executed successfully
+2026-05-09 15:15:20 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:15:20 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:15:29 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:15:30 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 15:15:32 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:15:32 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:15:57 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:15:58 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:16:14 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:16:14 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:16:29 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/39 from IP: 127.0.0.1
+2026-05-09 15:16:29 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:16:29 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/39 from IP: 127.0.0.1
+2026-05-09 15:16:29 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:16:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> PUT /auth/UpdateById/39 from IP: 127.0.0.1
+2026-05-09 15:16:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: updateUser executed successfully
+2026-05-09 15:17:01 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:17:01 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:17:22 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:17:22 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:35:11 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/33 from IP: 127.0.0.1
+2026-05-09 15:35:11 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:35:11 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/33 from IP: 127.0.0.1
+2026-05-09 15:35:11 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:35:39 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/33 from IP: 127.0.0.1
+2026-05-09 15:35:39 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:36:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/33 from IP: 127.0.0.1
+2026-05-09 15:36:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:36:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/33 from IP: 127.0.0.1
+2026-05-09 15:36:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:36:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/33 from IP: 127.0.0.1
+2026-05-09 15:36:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:36:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/33 from IP: 127.0.0.1
+2026-05-09 15:36:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:36:58 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/33 from IP: 127.0.0.1
+2026-05-09 15:36:58 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:37:06 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/33 from IP: 127.0.0.1
+2026-05-09 15:37:06 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:39:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:39:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:40:07 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/37 from IP: 127.0.0.1
+2026-05-09 15:40:07 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:40:07 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/37 from IP: 127.0.0.1
+2026-05-09 15:40:07 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 15:49:43 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:49:43 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 15:49:45 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:49:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:50:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:50:18 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 15:51:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 15:51:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 16:01:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 16:01:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 16:01:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 16:01:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 16:02:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 16:02:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 16:02:25 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 16:02:25 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 16:02:56 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 16:02:56 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 16:03:52 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 16:03:52 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 16:03:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 16:03:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 16:05:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 16:05:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 16:05:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 16:05:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 16:05:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 16:05:21 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 16:05:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 16:05:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 16:39:19 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 16:39:19 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 17:38:15 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 17:38:15 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 17:38:15 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 17:38:15 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 17:38:37 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 17:38:37 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 17:38:39 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 17:38:39 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 17:41:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/39 from IP: 127.0.0.1
+2026-05-09 17:41:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 17:41:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/39 from IP: 127.0.0.1
+2026-05-09 17:41:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 17:41:48 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 17:41:48 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 18:18:14 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-09 18:18:15 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-09 18:25:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-09 18:25:24 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2026-05-09 18:25:24 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Duplicate entry 'saif16mohamed05@gmail.com' for key 'users.UK6dotkott2kjsp8vw4d0m25fb7'
+2026-05-09 18:25:24 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: could not execute statement [Duplicate entry 'saif16mohamed05@gmail.com' for key 'users.UK6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,password,phone,role_id) values (?,?,?,?,?,?,?)]; SQL [insert into users (created_at,email,first_name,last_name,password,phone,role_id) values (?,?,?,?,?,?,?)]; constraint [users.UK6dotkott2kjsp8vw4d0m25fb7]
+2026-05-09 18:26:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-09 18:26:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-09 18:27:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-09 18:27:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-09 18:28:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 18:28:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 18:28:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 18:28:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 18:49:22 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 18:49:22 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-09 18:49:22 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-09 18:49:41 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-09 18:49:41 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.12 with PID 18924 (A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\AuthService\target\classes started by ahmed in A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\AuthService)
+2026-05-09 18:49:41 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 18:49:42 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 18:49:42 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2026-05-09 18:49:43 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 18:49:43 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 18:49:43 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 18:49:43 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-09 18:49:43 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 18:49:43 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2048 ms
+2026-05-09 18:49:44 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 18:49:44 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-09 18:49:44 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 18:49:44 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 18:49:44 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 18:49:45 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a278584
+2026-05-09 18:49:45 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 18:49:47 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 18:49:47 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 18:49:48 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-09 18:49:48 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@33fc92d6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e2e11ee, org.springframework.security.web.context.SecurityContextHolderFilter@58829c2c, org.springframework.security.web.header.HeaderWriterFilter@52a3eba3, org.springframework.web.filter.CorsFilter@189f9f9f, org.springframework.security.web.authentication.logout.LogoutFilter@8a8cab8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c6553c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59ac60d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b908c6d, org.springframework.security.web.session.SessionManagementFilter@4c5e123d, org.springframework.security.web.access.ExceptionTranslationFilter@764d54a0, org.springframework.security.web.access.intercept.AuthorizationFilter@54644470]
+2026-05-09 18:49:49 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 18:49:49 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-09 18:49:49 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 8.464 seconds (process running for 8.891)
+2026-05-09 18:50:00 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-09 18:50:00 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-09 18:50:00 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-09 18:50:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-09 18:50:00 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: Email already exists
+2026-05-09 18:53:02 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 18:53:02 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 18:53:04 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 18:53:04 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 20:51:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:51:55 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:51:55 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:51:55 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:52:39 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:52:39 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:52:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:52:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:53:37 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:53:37 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:53:58 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:53:58 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:54:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:54:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:54:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:54:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:54:28 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:54:28 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:54:45 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:54:45 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:56:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:56:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:56:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:56:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:58:58 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:58:58 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:59:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:59:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 20:59:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 20:59:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:00:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:00:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:00:01 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:00:01 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:00:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:00:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:00:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:00:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:00:18 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:00:18 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:00:34 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:00:34 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:00:36 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:00:36 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:00:37 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:00:37 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:00:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:00:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:00:45 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:00:45 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:00:47 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:00:47 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:00:51 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:00:51 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:01:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:01:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:01:28 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:01:28 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:01:37 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:01:37 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:01:37 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:01:37 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:01:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:01:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:01:56 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:01:56 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:01:58 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:01:58 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:02:04 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:02:04 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:03:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:03:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:04:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:04:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:04:28 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:04:28 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:04:29 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:04:29 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:04:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:04:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:04:32 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:04:32 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:04:44 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:04:44 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:04:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:04:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:04:51 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:04:51 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:04:52 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:04:52 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:04:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:04:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:05:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:05:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:05:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:05:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:05:28 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:05:28 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:05:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:05:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:05:59 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:05:59 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:06:25 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:06:25 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:06:25 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:06:25 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:20:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:20:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:20:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/36 from IP: 127.0.0.1
+2026-05-09 21:20:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:21:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 21:21:11 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 21:23:18 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-09 21:23:18 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-09 21:25:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 21:25:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 21:29:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 21:29:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 21:50:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/11 from IP: 127.0.0.1
+2026-05-09 21:50:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/39 from IP: 127.0.0.1
+2026-05-09 21:50:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/30 from IP: 127.0.0.1
+2026-05-09 21:50:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:50:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:50:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:50:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/39 from IP: 127.0.0.1
+2026-05-09 21:50:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/30 from IP: 127.0.0.1
+2026-05-09 21:50:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/11 from IP: 127.0.0.1
+2026-05-09 21:50:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:50:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:50:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:53:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 21:53:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:53:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 21:53:24 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:53:55 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 21:53:55 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:53:55 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 21:53:55 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:54:30 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-09 21:54:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-09 21:54:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 21:54:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/46 from IP: 127.0.0.1
+2026-05-09 21:54:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:54:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:55:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/11 from IP: 127.0.0.1
+2026-05-09 21:55:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/39 from IP: 127.0.0.1
+2026-05-09 21:55:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/30 from IP: 127.0.0.1
+2026-05-09 21:55:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:55:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:55:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:55:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/39 from IP: 127.0.0.1
+2026-05-09 21:55:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/11 from IP: 127.0.0.1
+2026-05-09 21:55:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/30 from IP: 127.0.0.1
+2026-05-09 21:55:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:55:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 21:55:05 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:01:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/46 from IP: 127.0.0.1
+2026-05-09 22:01:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 22:01:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:01:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:01:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/46 from IP: 127.0.0.1
+2026-05-09 22:01:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 22:01:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:01:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:01:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/30 from IP: 127.0.0.1
+2026-05-09 22:01:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/39 from IP: 127.0.0.1
+2026-05-09 22:01:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/11 from IP: 127.0.0.1
+2026-05-09 22:01:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:01:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:01:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:01:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/11 from IP: 127.0.0.1
+2026-05-09 22:01:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/30 from IP: 127.0.0.1
+2026-05-09 22:01:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:01:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:01:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/39 from IP: 127.0.0.1
+2026-05-09 22:01:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:25:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 22:25:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/46 from IP: 127.0.0.1
+2026-05-09 22:25:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:25:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:25:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/46 from IP: 127.0.0.1
+2026-05-09 22:25:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/35 from IP: 127.0.0.1
+2026-05-09 22:25:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:25:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:25:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 22:25:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 22:27:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 22:27:11 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 22:27:57 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 22:27:57 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 22:28:30 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 22:28:31 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 22:28:32 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 22:28:32 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 22:29:14 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 22:29:14 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 22:29:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 22:29:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 22:31:27 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 22:31:28 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 22:32:53 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 22:32:53 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:32:53 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 22:32:53 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:33:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 22:33:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:33:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 22:33:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 22:39:14 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-09 22:39:14 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.18 with PID 30184 (D:\Eclips\Backend\AuthService\target\classes started by Dell in D:\Eclips\Backend\AuthService)
+2026-05-09 22:39:14 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 22:39:14 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 22:39:14 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2026-05-09 22:39:15 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 22:39:15 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 22:39:15 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 22:39:15 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-09 22:39:15 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 22:39:15 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1020 ms
+2026-05-09 22:39:15 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 22:39:15 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-09 22:39:15 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 22:39:15 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 22:39:15 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 22:39:15 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f33e6d
+2026-05-09 22:39:15 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 22:39:16 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 22:39:16 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 22:39:17 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-09 22:39:17 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34d644b5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@276b68af, org.springframework.security.web.context.SecurityContextHolderFilter@6ba516ff, org.springframework.security.web.header.HeaderWriterFilter@21f27bb5, org.springframework.web.filter.CorsFilter@50915d5, org.springframework.security.web.authentication.logout.LogoutFilter@55da6bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@769c80d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f0c2eff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63661fc7, org.springframework.security.web.session.SessionManagementFilter@5a8149f6, org.springframework.security.web.access.ExceptionTranslationFilter@500beb9f, org.springframework.security.web.access.intercept.AuthorizationFilter@6c89c92e]
+2026-05-09 22:39:17 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 22:39:17 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-09 22:39:17 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 3.587 seconds (process running for 3.929)
+2026-05-09 22:45:36 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-09 22:45:36 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-09 22:45:36 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-09 22:45:36 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 22:45:37 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 22:52:51 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 22:52:51 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 22:52:55 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 22:52:56 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 22:56:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/AllUsers from IP: 127.0.0.1
+2026-05-09 22:56:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: GetUsers executed successfully
+2026-05-09 22:57:22 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/AllUsers from IP: 0:0:0:0:0:0:0:1
+2026-05-09 22:57:22 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: GetUsers | Message: Forbidden: direct access denied
+2026-05-09 22:58:16 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/AllUsers from IP: 127.0.0.1
+2026-05-09 22:58:16 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: GetUsers executed successfully
+2026-05-09 23:00:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/AllUsers from IP: 127.0.0.1
+2026-05-09 23:00:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: GetUsers executed successfully
+2026-05-09 23:01:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/AllUsers from IP: 127.0.0.1
+2026-05-09 23:01:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: GetUsers executed successfully
+2026-05-09 23:10:34 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 23:10:34 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 23:10:44 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 23:10:45 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 23:10:50 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 23:10:50 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 23:11:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 23:11:00 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-09 23:11:13 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 23:11:13 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 23:11:26 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/AllUsers from IP: 127.0.0.1
+2026-05-09 23:11:26 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: GetUsers executed successfully
+2026-05-09 23:11:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/AllUsers from IP: 127.0.0.1
+2026-05-09 23:11:41 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: GetUsers | Message: Forbidden: Admin only
+2026-05-09 23:12:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/1 from IP: 127.0.0.1
+2026-05-09 23:12:21 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: getUserById | Message: Forbidden: Not allowed
+2026-05-09 23:12:29 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/5 from IP: 127.0.0.1
+2026-05-09 23:12:29 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: getUserById executed successfully
+2026-05-09 23:12:39 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> GET /auth/GetById/2 from IP: 127.0.0.1
+2026-05-09 23:12:39 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: getUserById | Message: Forbidden: Not allowed
+2026-05-09 23:24:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-09 23:24:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-09 23:26:08 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-09 23:26:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-09 23:41:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-09 23:41:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-09 23:44:16 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-09 23:44:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully

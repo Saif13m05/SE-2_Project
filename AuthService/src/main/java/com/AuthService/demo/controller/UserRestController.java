@@ -29,17 +29,6 @@ public class UserRestController {
         return userService.getUserById(id, request);
     }
 
-//    @GetMapping("/GetByEmail/{email}")
-//    public User getUserByEmail(@PathVariable String email, HttpServletRequest request) {
-//        return userService.getUserByEmail(email, request);
-//    }
-
-//    @PutMapping("/UpedateByEmail/{email}")
-//    public String updateUser(@Valid @PathVariable String email,
-//                             @RequestBody UserDTO dto,
-//                             HttpServletRequest request) {
-//        return userService.updateByEmail(email, dto, request);
-//    }
 
     @PostMapping("/create")
     public int createUser(@Valid @RequestBody UserDTO dto,

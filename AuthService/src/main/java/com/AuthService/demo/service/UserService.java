@@ -47,27 +47,27 @@ public class UserService {
 	                .orElseThrow(() -> new ResourceNotFoundException("User not found with id: " + id));
 	    }
 
-	    public User getUserByEmail(String email, HttpServletRequest request) {
-	    	authHelper.checkInternal(request);
-	    	authHelper.checkOwnerOrAdmin(request, email);
-
-	        return userRepo.findByEmail(email);
-	    }
-
-	    public String updateByEmail(String email, UserDTO dto, HttpServletRequest request) {
-	    	authHelper.checkInternal(request);
-	    	authHelper.checkOwnerOrAdmin(request, email);
-
-	        User user = userRepo.findByEmail(email);
-
-	        user.setFirstName(dto.getFirstName());
-	        user.setLastName(dto.getLastName());
-	        user.setPassword(passwordEncoder.encode(dto.getPassword()));
-
-	        userRepo.save(user);
-
-	        return "User updated successfully";
-	    }
+//	    public User getUserByEmail(String email, HttpServletRequest request) {
+//	    	authHelper.checkInternal(request);
+//	    	authHelper.checkOwnerOrAdmin(request, email);
+//
+//	        return userRepo.findByEmail(email);
+//	    }
+//
+//	    public String updateByEmail(String email, UserDTO dto, HttpServletRequest request) {
+//	    	authHelper.checkInternal(request);
+//	    	authHelper.checkOwnerOrAdmin(request, email);
+//
+//	        User user = userRepo.findByEmail(email);
+//
+//	        user.setFirstName(dto.getFirstName());
+//	        user.setLastName(dto.getLastName());
+//	        user.setPassword(passwordEncoder.encode(dto.getPassword()));
+//
+//	        userRepo.save(user);
+//
+//	        return "User updated successfully";
+//	    }
 
 	    public int createUser(UserDTO dto, HttpServletRequest request) {
 	    	authHelper.checkInternal(request);
