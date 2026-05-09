@@ -1,0 +1,61 @@
+2026-05-08 00:19:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-08 00:19:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-08 17:37:26 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-08 17:37:26 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.18 with PID 18812 (D:\Eclips\Back end\AuthService\target\classes started by Dell in D:\Eclips\Back end\AuthService)
+2026-05-08 17:37:26 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-08 17:37:27 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-08 17:37:27 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2026-05-08 17:37:27 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-08 17:37:27 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-08 17:37:27 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-08 17:37:27 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-08 17:37:27 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-08 17:37:27 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1085 ms
+2026-05-08 17:37:27 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-08 17:37:27 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-08 17:37:27 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-08 17:37:28 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-08 17:37:28 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-08 17:37:28 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fa3def8
+2026-05-08 17:37:28 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-08 17:37:29 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-08 17:37:29 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-08 17:37:29 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-08 17:37:29 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77cd1f67, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@94f79a7, org.springframework.security.web.context.SecurityContextHolderFilter@307ba188, org.springframework.security.web.header.HeaderWriterFilter@779cda39, org.springframework.web.filter.CorsFilter@647d3279, org.springframework.security.web.authentication.logout.LogoutFilter@1bd5b1c8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73f0b216, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73bd146c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b9a1be5, org.springframework.security.web.session.SessionManagementFilter@765e5a55, org.springframework.security.web.access.ExceptionTranslationFilter@1ee5792a, org.springframework.security.web.access.intercept.AuthorizationFilter@6d7005e2]
+2026-05-08 17:37:30 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-08 17:37:30 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-08 17:37:30 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 3.986 seconds (process running for 4.333)
+2026-05-08 17:49:49 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08 17:49:49 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-08 17:49:49 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-08 17:49:49 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-08 17:49:50 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-08 17:52:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-08 17:52:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-08 17:53:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-08 17:53:55 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-08 17:56:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-08 17:56:23 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-08 18:05:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-08 18:05:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-08 18:06:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-08 18:06:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-08 20:50:43 [WARN] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m42s237ms570µs700ns).
+2026-05-08 21:58:11 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-08 21:58:11 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-08 22:16:56 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-08 22:16:56 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-08 22:18:25 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-08 22:18:25 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-08 22:22:58 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 0:0:0:0:0:0:0:1
+2026-05-08 22:22:58 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: Forbidden: direct access denied
+2026-05-08 23:09:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-08 23:09:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-08 23:10:29 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-08 23:10:30 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-08 23:10:59 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-08 23:11:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-08 23:21:25 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-08 23:21:25 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: login | Message: Invalid email or password
+2026-05-08 23:21:30 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-08 23:21:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully

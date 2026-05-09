@@ -1,0 +1,405 @@
+2026-05-07 01:53:12 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.12 with PID 23384 (A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService\target\classes started by ahmed in A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService)
+2026-05-07 01:53:12 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-07 01:53:13 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-07 01:53:13 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2026-05-07 01:53:14 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-07 01:53:14 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-07 01:53:14 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-07 01:53:14 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-07 01:53:14 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-07 01:53:14 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2394 ms
+2026-05-07 01:53:14 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-07 01:53:14 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-07 01:53:15 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-07 01:53:15 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-07 01:53:15 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-07 01:53:15 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12a6e8ed
+2026-05-07 01:53:15 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-07 01:53:17 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-07 01:53:17 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 01:53:18 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-07 01:53:19 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4fe4b8b6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77da2881, org.springframework.security.web.context.SecurityContextHolderFilter@69af938b, org.springframework.security.web.header.HeaderWriterFilter@761ea1f5, org.springframework.web.filter.CorsFilter@4fa3bebe, org.springframework.security.web.authentication.logout.LogoutFilter@58fb5b8f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52518ee1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fe38d1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63767d, org.springframework.security.web.session.SessionManagementFilter@2d91147b, org.springframework.security.web.access.ExceptionTranslationFilter@5bb45afc, org.springframework.security.web.access.intercept.AuthorizationFilter@554db19d]
+2026-05-07 01:53:20 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-07 01:53:20 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-07 01:53:20 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 8.89 seconds (process running for 9.541)
+2026-05-07 02:03:15 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-07 02:03:15 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-07 02:03:15 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 25 ms
+2026-05-07 02:03:15 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 02:03:16 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 02:23:36 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 02:23:36 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 02:40:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 02:40:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 02:46:30 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 02:46:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 03:09:42 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 03:09:42 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-07 03:09:42 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-07 14:07:02 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.12 with PID 3732 (A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService\target\classes started by ahmed in A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService)
+2026-05-07 14:07:02 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-07 14:07:04 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-07 14:07:04 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 118 ms. Found 2 JPA repository interfaces.
+2026-05-07 14:07:07 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-07 14:07:07 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-07 14:07:07 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-07 14:07:07 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-07 14:07:07 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-07 14:07:07 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5330 ms
+2026-05-07 14:07:08 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-07 14:07:08 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-07 14:07:08 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-07 14:07:09 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-07 14:07:09 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-07 14:07:10 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c66ddab
+2026-05-07 14:07:10 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-07 14:07:13 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-07 14:07:14 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 14:07:16 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-07 14:07:18 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37f75ebf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@569b3009, org.springframework.security.web.context.SecurityContextHolderFilter@44b5b54, org.springframework.security.web.header.HeaderWriterFilter@3d96b8fb, org.springframework.web.filter.CorsFilter@23d0f6be, org.springframework.security.web.authentication.logout.LogoutFilter@76d220eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@183435c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69862a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48cebb78, org.springframework.security.web.session.SessionManagementFilter@15ade272, org.springframework.security.web.access.ExceptionTranslationFilter@29612ee2, org.springframework.security.web.access.intercept.AuthorizationFilter@72e5206]
+2026-05-07 14:07:20 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-07 14:07:20 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-07 14:07:20 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 20.003 seconds (process running for 20.728)
+2026-05-07 14:08:41 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-07 14:08:41 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-07 14:08:41 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-07 14:08:41 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 14:08:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 14:41:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 14:41:46 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 14:57:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 14:57:42 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 14:58:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 14:58:55 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 14:59:15 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 14:59:15 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2026-05-07 14:59:15 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Duplicate entry 'ziad.hassan1235@school.com' for key 'users.UK6dotkott2kjsp8vw4d0m25fb7'
+2026-05-07 14:59:15 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: could not execute statement [Duplicate entry 'ziad.hassan1235@school.com' for key 'users.UK6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,password,phone,role_id) values (?,?,?,?,?,?,?)]; SQL [insert into users (created_at,email,first_name,last_name,password,phone,role_id) values (?,?,?,?,?,?,?)]; constraint [users.UK6dotkott2kjsp8vw4d0m25fb7]
+2026-05-07 15:00:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 15:00:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 15:00:35 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 15:00:36 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 15:00:47 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 15:00:48 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2026-05-07 15:00:48 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Duplicate entry 'Saif.hassan@school.com' for key 'users.UK6dotkott2kjsp8vw4d0m25fb7'
+2026-05-07 15:00:48 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: could not execute statement [Duplicate entry 'Saif.hassan@school.com' for key 'users.UK6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,password,phone,role_id) values (?,?,?,?,?,?,?)]; SQL [insert into users (created_at,email,first_name,last_name,password,phone,role_id) values (?,?,?,?,?,?,?)]; constraint [users.UK6dotkott2kjsp8vw4d0m25fb7]
+2026-05-07 15:03:48 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 15:03:48 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 15:04:34 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 15:04:35 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 15:05:30 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 15:05:30 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 15:13:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 15:13:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 15:37:08 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 15:37:10 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 15:38:48 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 15:38:50 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 15:39:02 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 15:39:03 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 15:44:56 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 15:44:57 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 16:01:16 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-07 16:01:17 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.12 with PID 1532 (A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService\target\classes started by ahmed in A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService)
+2026-05-07 16:01:17 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-07 16:01:23 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-07 16:01:23 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 680 ms. Found 2 JPA repository interfaces.
+2026-05-07 16:01:30 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-07 16:01:30 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-07 16:01:30 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-07 16:01:30 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-07 16:01:30 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-07 16:01:30 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12638 ms
+2026-05-07 16:01:32 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-07 16:01:32 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-07 16:01:33 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-07 16:01:34 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-07 16:01:34 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-07 16:01:36 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2acca224
+2026-05-07 16:01:36 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-07 16:01:42 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-07 16:01:42 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 16:01:47 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-07 16:01:50 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5482b32a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bf2ecbb, org.springframework.security.web.context.SecurityContextHolderFilter@78c91d2a, org.springframework.security.web.header.HeaderWriterFilter@3b9c386d, org.springframework.web.filter.CorsFilter@1300112e, org.springframework.security.web.authentication.logout.LogoutFilter@40612056, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52a3eba3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ed74d03, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5955568, org.springframework.security.web.session.SessionManagementFilter@714a4ba2, org.springframework.security.web.access.ExceptionTranslationFilter@6d7a343f, org.springframework.security.web.access.intercept.AuthorizationFilter@2b9a7211]
+2026-05-07 16:01:53 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-07 16:01:53 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-07 16:01:53 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 42.791 seconds (process running for 45.251)
+2026-05-07 16:02:30 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-07 16:02:30 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-07 16:02:30 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-07 16:02:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 16:02:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 16:02:59 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 16:03:00 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: Validation failed for classes [com.AuthService.demo.Entity.User] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=firstName, rootBeanClass=class com.AuthService.demo.Entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+]
+2026-05-07 16:03:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 16:03:32 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 16:03:50 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 16:03:50 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: Validation failed for classes [com.AuthService.demo.Entity.User] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=lastName, rootBeanClass=class com.AuthService.demo.Entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+]
+2026-05-07 16:04:07 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 16:04:08 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 16:06:26 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 16:06:26 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-07 16:06:26 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-07 16:08:26 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-07 16:08:26 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.12 with PID 17472 (A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService\target\classes started by ahmed in A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService)
+2026-05-07 16:08:27 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-07 16:08:30 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-07 16:08:30 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 178 ms. Found 2 JPA repository interfaces.
+2026-05-07 16:08:34 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-07 16:08:35 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-07 16:08:35 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-07 16:08:35 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-07 16:08:36 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-07 16:08:36 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8630 ms
+2026-05-07 16:08:37 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-07 16:08:37 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-07 16:08:37 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-07 16:08:38 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-07 16:08:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-07 16:08:40 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f20b022
+2026-05-07 16:08:40 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-07 16:08:46 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-07 16:08:47 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 16:08:51 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-07 16:08:54 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@149ef64a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67201eeb, org.springframework.security.web.context.SecurityContextHolderFilter@764d54a0, org.springframework.security.web.header.HeaderWriterFilter@1bd6bfb0, org.springframework.web.filter.CorsFilter@2e41b65a, org.springframework.security.web.authentication.logout.LogoutFilter@7af17d31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b7d5eca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52a3eba3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d25943d, org.springframework.security.web.session.SessionManagementFilter@1b62ad1e, org.springframework.security.web.access.ExceptionTranslationFilter@455cb6d9, org.springframework.security.web.access.intercept.AuthorizationFilter@1f8ac459]
+2026-05-07 16:08:57 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-07 16:08:58 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-07 16:08:58 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 33.802 seconds (process running for 35.794)
+2026-05-07 16:09:20 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-07 16:09:20 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-07 16:09:20 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-07 16:09:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 16:09:22 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 16:10:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 16:10:31 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: Validation failed for classes [com.AuthService.demo.Entity.User] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must be a well-formed email address', propertyPath=email, rootBeanClass=class com.AuthService.demo.Entity.User, messageTemplate='{jakarta.validation.constraints.Email.message}'}
+]
+2026-05-07 16:10:51 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 16:10:52 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 16:22:16 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 16:22:18 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 16:41:08 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 16:41:08 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-07 16:41:08 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-07 16:42:11 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-07 16:42:12 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.12 with PID 19524 (A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService\target\classes started by ahmed in A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService)
+2026-05-07 16:42:12 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-07 16:42:16 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-07 16:42:17 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 577 ms. Found 2 JPA repository interfaces.
+2026-05-07 16:42:23 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-07 16:42:24 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-07 16:42:24 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-07 16:42:24 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-07 16:42:24 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-07 16:42:24 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12181 ms
+2026-05-07 16:42:26 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-07 16:42:27 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-07 16:42:27 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-07 16:42:29 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-07 16:42:30 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-07 16:42:32 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b7ab7ab
+2026-05-07 16:42:32 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-07 16:42:41 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-07 16:42:41 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 16:42:45 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-07 16:42:47 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a84beb7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72924f19, org.springframework.security.web.context.SecurityContextHolderFilter@6c9e7af2, org.springframework.security.web.header.HeaderWriterFilter@3fe59f84, org.springframework.web.filter.CorsFilter@46c093b4, org.springframework.security.web.authentication.logout.LogoutFilter@7fb313e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@af04d6d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2740585b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ff00844, org.springframework.security.web.session.SessionManagementFilter@c651286, org.springframework.security.web.access.ExceptionTranslationFilter@2f650dae, org.springframework.security.web.access.intercept.AuthorizationFilter@37806ccb]
+2026-05-07 16:42:50 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-07 16:42:50 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-07 16:42:50 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 43.094 seconds (process running for 45.424)
+2026-05-07 16:43:09 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-07 16:43:09 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-07 16:43:09 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-07 16:43:45 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 16:43:47 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 16:44:22 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 16:44:23 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: Validation failed for classes [com.AuthService.demo.Entity.User] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=firstName, rootBeanClass=class com.AuthService.demo.Entity.User, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+]
+2026-05-07 16:44:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 16:44:41 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: Validation failed for classes [com.AuthService.demo.Entity.User] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must be a well-formed email address', propertyPath=email, rootBeanClass=class com.AuthService.demo.Entity.User, messageTemplate='{jakarta.validation.constraints.Email.message}'}
+]
+2026-05-07 17:09:44 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 17:09:44 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-07 17:09:45 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-07 17:10:40 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-07 17:10:40 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.12 with PID 26292 (A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService\target\classes started by ahmed in A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService)
+2026-05-07 17:10:40 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-07 17:10:44 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-07 17:10:45 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 468 ms. Found 2 JPA repository interfaces.
+2026-05-07 17:10:50 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-07 17:10:50 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-07 17:10:50 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-07 17:10:50 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-07 17:10:50 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-07 17:10:50 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9839 ms
+2026-05-07 17:10:51 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-07 17:10:51 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-07 17:10:51 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-07 17:10:53 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-07 17:10:53 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-07 17:10:55 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ae66c98
+2026-05-07 17:10:55 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-07 17:11:00 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-07 17:11:00 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 17:11:03 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-07 17:11:06 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28901fe7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@289b7efe, org.springframework.security.web.context.SecurityContextHolderFilter@40273969, org.springframework.security.web.header.HeaderWriterFilter@65029fc, org.springframework.web.filter.CorsFilter@34ac72c3, org.springframework.security.web.authentication.logout.LogoutFilter@1e9e4468, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7da40bf4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75708130, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6cd8c373, org.springframework.security.web.session.SessionManagementFilter@533690d, org.springframework.security.web.access.ExceptionTranslationFilter@4830c979, org.springframework.security.web.access.intercept.AuthorizationFilter@42bbd21c]
+2026-05-07 17:11:08 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-07 17:11:08 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-07 17:11:08 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 31.624 seconds (process running for 33.935)
+2026-05-07 17:11:30 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-07 17:11:30 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-07 17:11:30 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-07 17:11:31 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 17:11:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 17:12:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 17:12:01 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: Validation failed for classes [com.AuthService.demo.Entity.User] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must be a well-formed email address', propertyPath=email, rootBeanClass=class com.AuthService.demo.Entity.User, messageTemplate='{jakarta.validation.constraints.Email.message}'}
+]
+2026-05-07 17:19:43 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 17:19:44 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 17:23:14 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 17:23:15 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: Validation failed for classes [com.AuthService.demo.Entity.User] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must be a well-formed email address', propertyPath=email, rootBeanClass=class com.AuthService.demo.Entity.User, messageTemplate='{jakarta.validation.constraints.Email.message}'}
+]
+2026-05-07 17:26:38 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 17:26:38 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 17:29:12 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 17:29:12 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2026-05-07 17:29:12 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Duplicate entry 'ahmed1234@g.c' for key 'users.UK6dotkott2kjsp8vw4d0m25fb7'
+2026-05-07 17:29:12 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: could not execute statement [Duplicate entry 'ahmed1234@g.c' for key 'users.UK6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,password,phone,role_id) values (?,?,?,?,?,?,?)]; SQL [insert into users (created_at,email,first_name,last_name,password,phone,role_id) values (?,?,?,?,?,?,?)]; constraint [users.UK6dotkott2kjsp8vw4d0m25fb7]
+2026-05-07 17:30:43 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 17:30:44 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 17:35:25 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 17:35:26 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 19:24:23 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-07 19:24:23 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.12 with PID 28512 (A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService\target\classes started by ahmed in A:\Faculty\year-3 semester-2\SA-2\Eclips-3\AuthService)
+2026-05-07 19:24:23 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-07 19:24:24 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-07 19:24:24 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2026-05-07 19:24:25 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-07 19:24:25 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-07 19:24:25 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-07 19:24:25 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-07 19:24:25 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-07 19:24:25 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1949 ms
+2026-05-07 19:24:25 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-07 19:24:25 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-07 19:24:25 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-07 19:24:26 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-07 19:24:26 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-07 19:24:26 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23df7fad
+2026-05-07 19:24:26 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-07 19:24:27 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-07 19:24:27 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 19:24:28 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-07 19:24:29 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@606d2a92, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a84beb7, org.springframework.security.web.context.SecurityContextHolderFilter@1d160161, org.springframework.security.web.header.HeaderWriterFilter@79aa675b, org.springframework.web.filter.CorsFilter@72924f19, org.springframework.security.web.authentication.logout.LogoutFilter@16718e1b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48cbb4c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@af04d6d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46c093b4, org.springframework.security.web.session.SessionManagementFilter@75708130, org.springframework.security.web.access.ExceptionTranslationFilter@287dde94, org.springframework.security.web.access.intercept.AuthorizationFilter@449f9628]
+2026-05-07 19:24:29 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-07 19:24:29 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-07 19:24:29 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 6.981 seconds (process running for 7.412)
+2026-05-07 19:24:56 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-07 19:24:56 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-07 19:24:56 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-07 19:24:56 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 19:24:57 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 19:25:32 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 19:25:32 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2026-05-07 19:25:32 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Duplicate entry 'ahmed123456@g.c' for key 'users.UK6dotkott2kjsp8vw4d0m25fb7'
+2026-05-07 19:25:32 [ERROR] com.AuthService.demo.AOP.LoggingAspect - ERROR -> Method: createUser | Message: could not execute statement [Duplicate entry 'ahmed123456@g.c' for key 'users.UK6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,password,phone,role_id) values (?,?,?,?,?,?,?)]; SQL [insert into users (created_at,email,first_name,last_name,password,phone,role_id) values (?,?,?,?,?,?,?)]; constraint [users.UK6dotkott2kjsp8vw4d0m25fb7]
+2026-05-07 19:25:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 19:25:40 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 21:46:48 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-07 21:46:48 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.12 with PID 22776 (A:\Faculty\year-3 semester-2\SA-2\New folder\Back end\AuthService\target\classes started by ahmed in A:\Faculty\year-3 semester-2\SA-2\New folder\Back end\AuthService)
+2026-05-07 21:46:48 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-07 21:46:49 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-07 21:46:49 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2026-05-07 21:46:51 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-07 21:46:51 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-07 21:46:51 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-07 21:46:51 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-07 21:46:51 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-07 21:46:51 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2276 ms
+2026-05-07 21:46:51 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-07 21:46:51 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-07 21:46:51 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-07 21:46:51 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-07 21:46:51 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-07 21:46:52 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f20b022
+2026-05-07 21:46:52 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-07 21:46:53 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-07 21:46:53 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 21:46:54 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-07 21:46:54 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@154cbb46, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58fbecde, org.springframework.security.web.context.SecurityContextHolderFilter@21f421b8, org.springframework.security.web.header.HeaderWriterFilter@5ec25b61, org.springframework.web.filter.CorsFilter@299615a5, org.springframework.security.web.authentication.logout.LogoutFilter@19f9404d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c989d82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e04c89d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ba6707e, org.springframework.security.web.session.SessionManagementFilter@77430c79, org.springframework.security.web.access.ExceptionTranslationFilter@3bf306d3, org.springframework.security.web.access.intercept.AuthorizationFilter@106c3e0a]
+2026-05-07 21:46:55 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-07 21:46:55 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-07 21:46:55 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 7.769 seconds (process running for 8.52)
+2026-05-07 21:48:05 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-07 21:48:05 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-07 21:48:05 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-07 21:49:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 21:49:33 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 21:49:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 21:49:54 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 21:52:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 21:52:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 21:53:07 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 21:53:07 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 21:54:16 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 21:54:17 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 22:05:12 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 22:05:12 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 22:18:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 22:18:00 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 22:25:38 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 22:25:38 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 22:26:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 22:26:09 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 22:31:04 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 22:31:04 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
+2026-05-07 22:46:40 [INFO] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-07 22:46:40 [INFO] com.AuthService.demo.AuthServiceApplication - Starting AuthServiceApplication using Java 17.0.12 with PID 984 (A:\Faculty\year-3 semester-2\SA-2\New folder\Back end\AuthService\target\classes started by ahmed in A:\Faculty\year-3 semester-2\SA-2\New folder\Back end\AuthService)
+2026-05-07 22:46:40 [INFO] com.AuthService.demo.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-07 22:46:40 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-07 22:46:41 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2026-05-07 22:46:42 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-07 22:46:42 [INFO] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-07 22:46:42 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-07 22:46:42 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-07 22:46:42 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-07 22:46:42 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2031 ms
+2026-05-07 22:46:42 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-07 22:46:42 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-07 22:46:42 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-07 22:46:43 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-07 22:46:43 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-07 22:46:43 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6654ca0d
+2026-05-07 22:46:43 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-07 22:46:45 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-07 22:46:45 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-07 22:46:45 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-07 22:46:46 [INFO] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b6bae60, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22c14d10, org.springframework.security.web.context.SecurityContextHolderFilter@140fa482, org.springframework.security.web.header.HeaderWriterFilter@2d6e09f0, org.springframework.web.filter.CorsFilter@66be0e72, org.springframework.security.web.authentication.logout.LogoutFilter@6d7a343f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@588614f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16718e1b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38276668, org.springframework.security.web.session.SessionManagementFilter@1e9e4468, org.springframework.security.web.access.ExceptionTranslationFilter@af04d6d, org.springframework.security.web.access.intercept.AuthorizationFilter@e594c46]
+2026-05-07 22:46:47 [INFO] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-07 22:46:47 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-07 22:46:47 [INFO] com.AuthService.demo.AuthServiceApplication - Started AuthServiceApplication in 7.793 seconds (process running for 8.305)
+2026-05-07 22:53:50 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-07 22:53:50 [INFO] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-07 22:53:50 [INFO] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-07 22:53:51 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 22:53:51 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 23:41:07 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 23:41:08 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 23:53:53 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/login from IP: 127.0.0.1
+2026-05-07 23:53:53 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: login executed successfully
+2026-05-07 23:56:20 [INFO] com.AuthService.demo.AOP.LoggingAspect - REQUEST -> POST /auth/create from IP: 127.0.0.1
+2026-05-07 23:56:21 [INFO] com.AuthService.demo.AOP.LoggingAspect - SUCCESS -> Method: createUser executed successfully
