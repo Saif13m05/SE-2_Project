@@ -46,26 +46,22 @@ public class EnrollmentService {
 	public List<Enrollment> syncEnrollments(EnrollmentDTO dto) {
 		int studentId = dto.getStudentId();
 		
-		// 1. جلب التسجيلات الحالية من الداتابيز
 		List<Enrollment> currentEnrollments = enrollmentRepo.findByStudentId(studentId);
 		
 		List<Integer> currentCourseIds = currentEnrollments.stream()
 				.map(e -> e.getCourse().getId())
 				.collect(Collectors.toList());
 
-
-		
-		// 2. حالة حذف كل المواد
 		if (dto.getCourseIds() == null || dto.getCourseIds().isEmpty()) {
 			for (Enrollment existing : currentEnrollments) {
 				enrollmentRepo.delete(existing);
 				sendKafkaEvent(studentId, existing.getCourse().getId(), "DELETED");
 			}
 			sendKafkaEvent(studentId, 0, "ALL_ENROLLMENTS_DELETED");
-			return new ArrayList<>(); // نرجع لستة فاضية لأننا مسحنا كل حاجة
+			return new ArrayList<>(); 
 		}
 
-		// 3. معالجة الحذف
+		
 		for (Enrollment existing : currentEnrollments) {
 			if (!dto.getCourseIds().contains(existing.getCourse().getId())) {
 				enrollmentRepo.delete(existing);
@@ -73,7 +69,6 @@ public class EnrollmentService {
 			}
 		}
 
-		// 4. معالجة الإضافة
 		for (int newCourseId : dto.getCourseIds()) {
 			if (!currentCourseIds.contains(newCourseId)) {
 				Course course = courseRepository.findById(newCourseId)
@@ -88,7 +83,6 @@ public class EnrollmentService {
 			}
 		}
 
-		// 5. نرجع القائمة النهائية المحدثة من الداتابيز بعد كل التعديلات
 		return enrollmentRepo.findByStudentId(studentId);
 	}
 
@@ -102,19 +96,15 @@ public class EnrollmentService {
 	
 	@Transactional
     public void dropCourse(int studentId, int courseId) {
-        // 1. تنفيذ عملية الحذف
+        
         enrollmentRepo.deleteByStudentIdAndCourse_Id(studentId, courseId);
         
-        // 2. إرسال حدث حذف المادة العادي
         sendKafkaEvent(studentId, courseId, "DELETED");
 
-        // 3. التشيك السحري: هل الطالب لسه عنده مواد تانية؟
         List<Enrollment> remaining = enrollmentRepo.findByStudentId(studentId);
         
         if (remaining.isEmpty()) {
-            // لو مفيش مواد خالص، نبعت الرسالة الخاصة بتغيير حالة الطالب
             sendKafkaEvent(studentId, 0, "ALL_ENROLLMENTS_DELETED");
-            // System.out.println("⚠️ تنبيه: الطالب مسح آخر مادة، تم إبلاغ خدمة الطلاب.");
         }
     }
 }

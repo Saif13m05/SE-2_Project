@@ -20,9 +20,7 @@ public class LabService {
     @Autowired
     AuthHelper authHelper;
 
-    // FIX: removed checkAdmin — any authenticated internal user can read labs.
-    // Role-based filtering (instructor sees only his courses' labs, student sees
-    // only enrolled courses' labs) is done entirely in the frontend.
+
     public List<Lab> getLabs(HttpServletRequest request) {
         authHelper.checkInternal(request);
         return labRepo.findAll();
@@ -34,7 +32,7 @@ public class LabService {
             .orElseThrow(() -> new ResourceNotFoundException("Lab not found"));
     }
 
-    // Write operations remain admin-only
+
     public Lab addLab(LabDTO dto, HttpServletRequest request) {
         authHelper.checkInternal(request);
         authHelper.checkAdmin(request);

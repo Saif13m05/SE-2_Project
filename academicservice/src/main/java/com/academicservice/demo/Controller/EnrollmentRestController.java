@@ -38,7 +38,7 @@ public class EnrollmentRestController {
 	
 	@PostMapping("/Save")
 	public List<Enrollment> addEnrollment(@RequestBody EnrollmentDTO dto) {		
-		// return enrollmentService.addEnrollment(dto);
+	
 		return enrollmentService.syncEnrollments(dto);
 	}
 	
