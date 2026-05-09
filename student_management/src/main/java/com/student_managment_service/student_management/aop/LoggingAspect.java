@@ -13,7 +13,7 @@ public class LoggingAspect {
 
     private static final Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
-    // 🔥 Intercept all service methods
+    //  Intercept all service methods
     @Around("execution(* com.student_managment_service.student_management.service..*(..))")
     public Object logServiceMethods(ProceedingJoinPoint joinPoint) throws Throwable {
 
