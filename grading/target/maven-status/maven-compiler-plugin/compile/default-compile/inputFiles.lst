@@ -1,0 +1,10 @@
+A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\grading\src\main\java\com\grading\demo\dto\events\EnrollmentEvent.java
+A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\grading\src\main\java\com\grading\demo\dto\AssignGradeDto.java
+A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\grading\src\main\java\com\grading\demo\GradingApplication.java
+A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\grading\src\main\java\com\grading\demo\service\StudentCourseGradeService.java
+A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\grading\src\main\java\com\grading\demo\dto\AddCourseDto.java
+A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\grading\src\main\java\com\grading\demo\consumer\GradingConsumer.java
+A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\grading\src\main\java\com\grading\demo\model\StudentCourseGrade.java
+A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\grading\src\main\java\com\grading\demo\controller\StudentCourseGradeController.java
+A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\grading\src\main\java\com\grading\demo\exception\GlobalExceptionHandler.java
+A:\Faculty\year-3 semester-2\SA-2\New folder\Backend\grading\src\main\java\com\grading\demo\repo\StudentCourseGradeRepo.java

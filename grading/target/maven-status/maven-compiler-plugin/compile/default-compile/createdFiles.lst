@@ -1,0 +1,10 @@
+com\grading\demo\controller\StudentCourseGradeController.class
+com\grading\demo\consumer\GradingConsumer.class
+com\grading\demo\dto\AddCourseDto.class
+com\grading\demo\repo\StudentCourseGradeRepo.class
+com\grading\demo\dto\AssignGradeDto.class
+com\grading\demo\model\StudentCourseGrade.class
+com\grading\demo\service\StudentCourseGradeService.class
+com\grading\demo\exception\GlobalExceptionHandler.class
+com\grading\demo\dto\events\EnrollmentEvent.class
+com\grading\demo\GradingApplication.class
