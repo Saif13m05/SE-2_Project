@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+jwt:
+  secret: mySuperSecretKeyForJwtAuthentication123456
+
+spring:
+  cloud:
+    gateway:
+      routes:
+
+        # ------------------------------------------------------------------
+        # Auth Service  –  public routes (login / register bypass the filter)
+        # ------------------------------------------------------------------
+        - id: auth-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/auth/**
+
+        # ------------------------------------------------------------------
+        # Academic / Course Service  –  ALL routes require a valid JWT
+        # ------------------------------------------------------------------
+        - id: course-service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/course/**
+
+        - id: academic-service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/enrollment/**, /instructor/**, /lab/**
+
+        - id: Student-service
+          uri: http://localhost:8083
+          predicates:
+            - Path=/parents/**, /student/**
+
+        - id: Grading-service 
+          uri: http://localhost:8084
+          predicates:
+            - Path=/grades/**

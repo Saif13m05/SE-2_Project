@@ -1,0 +1,227 @@
+:root {
+  --sidebar-w: 240px;
+  --topbar-h: 60px;
+  --bg: #f4f6fb;
+  --sidebar-bg: #1e2a3a;
+  --card-radius: 14px;
+  --transition: .2s ease;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  margin: 0;
+}
+
+/* ══════════════════════════════════════
+   SIDEBAR
+══════════════════════════════════════ */
+.sms-sidebar {
+  width: var(--sidebar-w);
+  min-height: 100vh;
+  background: var(--sidebar-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1040;
+  transition: transform var(--transition);
+}
+
+.sms-sidebar .nav-link {
+  color: #8a9bb0;
+  border-radius: 8px;
+  margin: 1px 0;
+  padding: 9px 12px;
+  font-size: .85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  transition: background var(--transition), color var(--transition);
+  text-decoration: none;
+}
+.sms-sidebar .nav-link:hover { background: rgba(255,255,255,.07); color: #fff; }
+.sms-sidebar .nav-link.active { background: #0d6efd; color: #fff; }
+
+.nav-section {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #3d4f63;
+  padding: 12px 12px 3px;
+}
+
+/* ══════════════════════════════════════
+   MAIN CONTENT
+══════════════════════════════════════ */
+.sms-main {
+  margin-left: var(--sidebar-w);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left var(--transition);
+}
+
+/* ══════════════════════════════════════
+   TOPBAR
+══════════════════════════════════════ */
+.sms-topbar {
+  height: var(--topbar-h);
+  background: #fff;
+  border-bottom: 1px solid #e9ecef;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  gap: 14px;
+}
+
+/* Hamburger button — hidden on desktop */
+.sms-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #495057;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+  line-height: 1;
+}
+.sms-menu-btn:hover { background: #f0f4ff; color: #0d6efd; }
+
+/* ══════════════════════════════════════
+   CARDS
+══════════════════════════════════════ */
+.sms-card {
+  background: #fff;
+  border: none;
+  border-radius: var(--card-radius);
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+.sms-card-hover { transition: transform var(--transition), box-shadow var(--transition); }
+.sms-card-hover:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,.1); }
+
+/* ══════════════════════════════════════
+   TABLE
+══════════════════════════════════════ */
+.sms-table thead th {
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #6c757d;
+  background: #f8f9fa;
+  border-bottom: 2px solid #f0f2f5;
+  white-space: nowrap;
+}
+.sms-table tbody tr { transition: background .1s; }
+.sms-table tbody tr:hover { background: #f0f4ff; }
+
+/* ══════════════════════════════════════
+   AVATAR
+══════════════════════════════════════ */
+.sms-avatar {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+/* ══════════════════════════════════════
+   LOGO
+══════════════════════════════════════ */
+.sms-logo {
+  padding: 18px 14px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.sms-logo-icon {
+  width: 36px;
+  height: 36px;
+  background: #0d6efd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════════════════
+   MOBILE OVERLAY (backdrop)
+══════════════════════════════════════ */
+.sms-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  z-index: 1039;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+.sms-overlay.visible {
+  display: block;
+  opacity: 1;
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE — MOBILE
+══════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* Sidebar slides off-screen by default */
+  .sms-sidebar {
+    transform: translateX(-100%);
+  }
+  /* When open class added via JS */
+  .sms-sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* Main takes full width */
+  .sms-main {
+    margin-left: 0;
+  }
+
+  /* Show hamburger */
+  .sms-menu-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Tighter padding on small screens */
+  .sms-topbar {
+    padding: 0 14px;
+    gap: 10px;
+  }
+
+  main.p-4 {
+    padding: 16px !important;
+  }
+
+  /* Stack stat cards */
+  .row .col-6 { flex: 0 0 50%; max-width: 50%; }
+}
+
+@media (max-width: 480px) {
+  .row .col-6 { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* ══════════════════════════════════════
+   SCROLLBAR (webkit)
+══════════════════════════════════════ */
+.sms-sidebar nav::-webkit-scrollbar { width: 4px; }
+.sms-sidebar nav::-webkit-scrollbar-thumb { background: rgba(255,255,255,.1); border-radius: 4px; }
+.sms-sidebar nav::-webkit-scrollbar-track { background: transparent; }
