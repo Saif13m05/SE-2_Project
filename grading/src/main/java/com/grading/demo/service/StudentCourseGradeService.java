@@ -6,6 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.grading.demo.dto.AddCourseDto;
+import com.grading.demo.dto.AssignGradeDto;
 import com.grading.demo.model.StudentCourseGrade;
 import com.grading.demo.repo.StudentCourseGradeRepo;
 
@@ -19,34 +21,34 @@ public class StudentCourseGradeService {
     StudentCourseGradeRepo repo;
 
     // Add course
-    public StudentCourseGrade addCourse(int studentId, int courseId) {
+    public StudentCourseGrade addCourse(AddCourseDto dto) {
 
-        long count = repo.countByStudentId(studentId);
+        long count = repo.countByStudentId(dto.studentId);
 
         if (count >= 7) {
             throw new RuntimeException("Max 7 courses allowed");
         }
 
         StudentCourseGrade scg = new StudentCourseGrade();
-        scg.setStudentId(studentId);
-        scg.setCourseId(courseId);
+        scg.setStudentId(dto.studentId);
+        scg.setCourseId(dto.courseId);
 
         return repo.save(scg);
     }
 
-    public void removeGradeRecord(int studentId, int courseId) {
-        repo.findByStudentIdAndCourseId(studentId, courseId)
+    public void removeGradeRecord(AddCourseDto dto) {
+        repo.findByStudentIdAndCourseId(dto.studentId, dto.courseId)
             .ifPresent(record -> repo.delete(record));
     }
 
     // Assign grade
-    public StudentCourseGrade assignGrade(int studentId, int courseId, Double grade) {
+    public StudentCourseGrade assignGrade(AssignGradeDto dto) {
 
         StudentCourseGrade scg = repo
-                .findByStudentIdAndCourseId(studentId, courseId)
+                .findByStudentIdAndCourseId(dto.studentId, dto.courseId)
                 .orElseThrow(() -> new RuntimeException("Course not found"));
 
-        scg.setGrade(grade);
+        scg.setGrade(dto.grade);
 
         return repo.save(scg);
     }

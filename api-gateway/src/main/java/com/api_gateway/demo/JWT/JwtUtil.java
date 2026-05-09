@@ -17,10 +17,7 @@ public class JwtUtil {
         return Keys.hmacShaKeyFor(secret.getBytes());
     }
 
-    /**
-     * Validates the token signature and expiration.
-     * Throws a JwtException (runtime) if invalid.
-     */
+    
     public Claims extractAllClaims(String token) {
         return Jwts.parserBuilder()
                 .setSigningKey(getSigningKey())

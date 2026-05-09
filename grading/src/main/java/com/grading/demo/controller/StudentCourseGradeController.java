@@ -23,15 +23,13 @@ public class StudentCourseGradeController {
 
     @PostMapping("/add-course")
     public StudentCourseGrade addCourse(@RequestBody AddCourseDto request) {
-        return service.addCourse(request.studentId, request.courseId);
+        return service.addCourse(request);
     }
 
     @PutMapping("/assign-grade")
     public StudentCourseGrade assignGrade(@Valid @RequestBody AssignGradeDto request) {
         return service.assignGrade(
-                request.studentId,
-                request.courseId,
-                request.grade
+        		request
         );
     }
 
